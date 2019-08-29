@@ -6,8 +6,8 @@ This work was designed to develop an algorithm for network inference from non-ti
 Table of Contents
 -----------------------
 
-`E-machine <https://github.com/danhtaihoang/expectation-reflection/blob/master/emachine.ipynb>`_
+`E-machine <https://github.com/danhtaihoang/e-machine/blob/master/emachine.ipynb>`_
 
-`Performance comparison <https://github.com/danhtaihoang/expectation-reflection/blob/master/compare.ipynb>`_
+`Performance comparison <https://github.com/danhtaihoang/e-machine/blob/master/compare.ipynb>`_
 
-`Application <https://github.com/danhtaihoang/expectation-reflection/blob/master/application.ipynb>`_
+`Application <https://github.com/danhtaihoang/e-machine/blob/master/application.ipynb>`_
