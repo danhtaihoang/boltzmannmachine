@@ -10,4 +10,4 @@ Table of Contents
 
 `Performance comparison <https://github.com/danhtaihoang/expectation-reflection/blob/master/compare.ipynb>`_
 
-`Application <https://github.com/danhtaihoang/expectation-reflection/blob/master/noisecancel.ipynb>`_
+`Application <https://github.com/danhtaihoang/expectation-reflection/blob/master/application.ipynb>`_
