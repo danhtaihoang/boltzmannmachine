@@ -77,7 +77,6 @@ def hopfield_method(s):
     w = np.mean(ops,axis=0)
     #print('hopfield error ',nplin.norm(w-w_true))
     return w
-
 #=========================================================================================    
 def MLE_method(seq,max_iter=150,alpha=5e-2):
     import itertools
@@ -117,8 +116,8 @@ def PLE_method(seqs):
     ## pseudo likelihood estimation
     np.random.seed(13)
     # Define common functions
-    calc_e,calc_observables,mchApproximation = coniii.define_ising_helper_functions()    
-    get_multipliers_r,calc_observables_r = coniii.define_pseudo_ising_helpers(n_var)
+    calc_e,calc_observables,mchApproximation = coniii.define_ising_helper_functions()      
+    get_multipliers_r,calc_observables_r = coniii.define_pseudo_ising_helper_functions(n_var)
 
     solver = coniii.Pseudo(n_var,calc_observables=calc_observables,
                     calc_observables_r=calc_observables_r,
