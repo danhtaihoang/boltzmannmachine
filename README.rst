@@ -6,8 +6,8 @@ This work was designed to develop an algorithm for network inference from non-ti
 Table of Contents
 -----------------------
 
-`E-machine <https://github.com/danhtaihoang/e-machine/blob/master/emachine.ipynb>`_
+`E-machine <https://github.com/danhtaihoang/e-machine/blob/master/html/emachine.html>`_
 
-`Performance comparison <https://github.com/danhtaihoang/e-machine/blob/master/compare.ipynb>`_
+`Performance comparison <https://github.com/danhtaihoang/e-machine/blob/master/html/small_system.html>`_
 
-`Application <https://github.com/danhtaihoang/e-machine/blob/master/application.ipynb>`_
+`Application <https://github.com/danhtaihoang/e-machine/blob/master/html/application.html>`_
