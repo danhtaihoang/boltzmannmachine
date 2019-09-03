@@ -14,8 +14,8 @@
 #
 import os
 import sys
-# sys.path.insert(0, os.path.abspath('.'))
 sys.path.insert(0, os.path.abspath('../'))
+
 
 # -- Project information -----------------------------------------------------
 
@@ -24,7 +24,7 @@ copyright = '2019, Danh-Tai Hoang'
 author = 'Danh-Tai Hoang'
 
 # The short X.Y version
-version = ''
+version = u''
 # The full version, including alpha/beta/rc tags
 release = '0.0.1'
 
@@ -81,7 +81,6 @@ exclude_patterns = [u'_build', 'Thumbs.db', '.DS_Store','**.ipynb_checkpoints']
 #pygments_style = None
 pygments_style = 'sphinx'
 
-
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
@@ -96,6 +95,7 @@ html_theme_path = ['theme']
 # documentation.
 #
 # html_theme_options = {}
+
 html_theme_options = {
     'rootlinks':
     (("https://www.niddk.nih.gov/research-funding/at-niddk/labs-branches/LBM",
@@ -106,7 +106,6 @@ html_theme_options = {
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
-
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
@@ -204,4 +203,4 @@ texinfo_documents = [
 # -- Options for intersphinx extension ---------------------------------------
 
 # Example configuration for intersphinx: refer to the Python standard library.
-intersphinx_mapping = {'https://docs.python.org/': None}
+#intersphinx_mapping = {'https://docs.python.org/': None}
