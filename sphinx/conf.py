@@ -39,18 +39,14 @@ release = '0.0.1'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 #extensions = [
-#    'sphinx.ext.autodoc',
-#    'sphinx.ext.intersphinx',
-#    'sphinx.ext.mathjax',
-#    'sphinx.ext.viewcode',
-#    'sphinx.ext.githubpages',
+#    'sphinx.ext.imgmath',
 #]
-
 extensions = [
     'sphinx.ext.autodoc', 'sphinx.ext.mathjax', 'sphinx.ext.githubpages',
     'sphinx.ext.viewcode', 'sphinx.ext.napoleon', 'nbsphinx',
     'matplotlib.sphinxext.plot_directive'
 ]
+
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -80,6 +76,7 @@ exclude_patterns = [u'_build', 'Thumbs.db', '.DS_Store','**.ipynb_checkpoints']
 # The name of the Pygments (syntax highlighting) style to use.
 #pygments_style = None
 pygments_style = 'sphinx'
+
 
 # -- Options for HTML output -------------------------------------------------
 
@@ -199,8 +196,3 @@ texinfo_documents = [
 
 
 # -- Extension configuration -------------------------------------------------
-
-# -- Options for intersphinx extension ---------------------------------------
-
-# Example configuration for intersphinx: refer to the Python standard library.
-#intersphinx_mapping = {'https://docs.python.org/': None}

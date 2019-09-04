@@ -11,9 +11,9 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "We compare the computing time of our method with other existing methods, including Hopfield approximation (HF), Maximum Likelihood Estimation (MLE), and Pseudo Likelihood Estimations (PLE). The code for PLE was adapted from ConIII package (https://github.com/eltrompetero/coniii).\n",
+    "We compare the computing time of our method with those of other existing methods, including Hopfield approximation (HF), Maximum Likelihood Estimation (MLE), and Pseudo Likelihood Estimations (PLE). The code for PLE was adapted from ConIII package (https://github.com/eltrompetero/coniii).\n",
     "\n",
-    "As shown in the previous sections, MLE cannot work for large system such as 40 variables, PLE cannot work for very large system size such as 100 variables. In the following, we will consider a small system with 20 variables. The computing time of MLE and PLE increases rapidly as system size increases (see our paper for more detail)."
+    "As shown in the previous sections, MLE cannot work for a large system such as 40 variables and PLE cannot work for a very large system size such as 100 variables. In the following, we will consider a small system with 20 variables. The computing time of MLE and PLE increases rapidly as system size increases (see our paper for more detail)."
    ]
   },
   {
@@ -259,7 +259,7 @@
    "name": "python",
    "nbconvert_exporter": "python",
    "pygments_lexer": "ipython3",
-   "version": "3.7.3"
+   "version": "3.7.0"
   }
  },
  "nbformat": 4,

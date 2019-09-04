@@ -321,7 +321,7 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<p>We first select a real image from testing set of MNIST data.</p>
+<p>We first select a real image from a testing set of MNIST data.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
@@ -399,7 +399,7 @@ div.rendered_html tbody tr:hover {
 <img alt="../_images/codesource_application_8_0.png" src="../_images/codesource_application_8_0.png" />
 </div>
 </div>
-<p>We aim to reconstruct the missing pixels, and recover the original image. We use images of the same digit from MNIST training set. Because of the limitation of sample size (n_seq = 5851), compared with number of variables (n_var = 28 x 28 = 784 pixels), we first identify “conserved” pixels that have common values for more than 80% of the training samples.</p>
+<p>We aim to reconstruct the missing pixels, and recover the original image. We use images of the same digit from the MNIST training set. Because of the limitation of sample size (n_seq = 5851), compared with number of variables (n_var = 28 x 28 = 784 pixels), we first identify “conserved” pixels that have common values for more than 80% of the training samples.</p>
 <p>We then find conserved and active pixels from training data.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
@@ -458,7 +458,7 @@ div.rendered_html tbody tr:hover {
 </pre></div></div>
 </div>
 <p>In this case, there are 562 conserved pixels in total, including 49 positive pixels and 513 negative pixels. There are 222 active pixels.</p>
-<p>To reconstruct value of conserved hidden pixels (of the test image), we simply set the value of conserved hidden pixels of the test image as the value of corresponding pixels in the training data.</p>
+<p>To reconstruct the value of conserved hidden pixels (of the test image), we simply set the value of conserved hidden pixels of the test image as the value of corresponding pixels in the training data.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
@@ -490,7 +490,7 @@ div.rendered_html tbody tr:hover {
 n_hidden_active: 26
 </pre></div></div>
 </div>
-<p>Now, there are <code class="docutils literal notranslate"><span class="pre">n_hidden_active</span></code> (i.e., 26 in this example) hidden pixels that we need to find their values. We will apply our <span class="math notranslate nohighlight">\(\epsilon\)</span>-machine to find the pixel bias and interactions between 222 active pixels.</p>
+<p>Now, there are <code class="docutils literal notranslate"><span class="pre">n_hidden_active</span></code> (i.e., 26 in this example) hidden pixels that we need to find the values of. We will apply our <span class="math notranslate nohighlight">\(\epsilon\)</span>-machine to find the pixel bias and interactions between 222 active pixels.</p>
 <p>We find pixel bias and interactions of active pixels (from training data).</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
@@ -532,7 +532,7 @@ n_hidden_active: 26
 optimal eps: 0.935
 </pre></div></div>
 </div>
-<p>We then apply to test image, select the best active hidden pixel vector. This step requires a large computer memony, we perform this procedure by using a computing server.</p>
+<p>We then apply these to the test image and select the best active hidden pixel vector. This step requires a large computer memory and we perform this procedure by using a computing server.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
@@ -566,7 +566,7 @@ optimal eps: 0.935
 </pre></div>
 </div>
 </div>
-<p>We load the computed result from above code.</p>
+<p>We load the computed result from the code above.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
@@ -576,7 +576,7 @@ optimal eps: 0.935
 </pre></div>
 </div>
 </div>
-<p>We plot our recorved image.</p>
+<p>We plot the image we recovered.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
@@ -617,7 +617,7 @@ optimal eps: 0.935
 <img alt="../_images/codesource_application_24_0.png" src="../_images/codesource_application_24_0.png" />
 </div>
 </div>
-<p>The recovered image looks very similar with the original image.</p>
+<p>The recovered image looks like the original image.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>

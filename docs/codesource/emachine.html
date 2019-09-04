@@ -329,7 +329,7 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<p>We consider a system of <code class="docutils literal notranslate"><span class="pre">n_var</span></code> variables that interact each others with a coupling variability parameter <code class="docutils literal notranslate"><span class="pre">g</span></code>. The number of observed sequences is <code class="docutils literal notranslate"><span class="pre">n_seq</span></code>.</p>
+<p>We consider a system of <code class="docutils literal notranslate"><span class="pre">n_var</span></code> variables that interact with each other using a coupling variability parameter <code class="docutils literal notranslate"><span class="pre">g</span></code>. The number of observed sequences is <code class="docutils literal notranslate"><span class="pre">n_seq</span></code>.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
@@ -342,7 +342,7 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<p>Using the function <code class="docutils literal notranslate"><span class="pre">EM.generate_seq</span></code>, we synthesize non-time series of variable states, <code class="docutils literal notranslate"><span class="pre">seqs</span></code>. The actual interactions between variables is represented by <code class="docutils literal notranslate"><span class="pre">w_true</span></code>. In this code, <code class="docutils literal notranslate"><span class="pre">w_true</span></code> includes linear terms and quadratic terms.</p>
+<p>Using the function <code class="docutils literal notranslate"><span class="pre">EM.generate_seq</span></code>, we synthesize non-time series of variable states, <code class="docutils literal notranslate"><span class="pre">seqs</span></code>. The actual interaction between variables is represented by <code class="docutils literal notranslate"><span class="pre">w_true</span></code>. In this code, <code class="docutils literal notranslate"><span class="pre">w_true</span></code> includes linear terms and quadratic terms.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
@@ -352,7 +352,7 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<p>For convenience and to reduce computing time (in python), we use Einstein convention to convert linear and quadratic terms: <span class="math notranslate nohighlight">\(\{ops\} = \{\sigma_i, \sigma_i \sigma_j\}\)</span> (with <span class="math notranslate nohighlight">\(i &lt; j\)</span>). So that, <code class="docutils literal notranslate"><span class="pre">ops</span></code> is a matrix of <code class="docutils literal notranslate"><span class="pre">n_seq</span></code> x <code class="docutils literal notranslate"><span class="pre">n_var</span> <span class="pre">+</span> <span class="pre">0.5*n_var*(n_var-1)</span></code>.</p>
+<p>For convenience and to reduce computing time (in python), we use Einstein conventions to convert linear and quadratic terms: <span class="math notranslate nohighlight">\(\{ops\} = \{\sigma_i, \sigma_i \sigma_j\}\)</span> (with <span class="math notranslate nohighlight">\(i &lt; j\)</span>). So that, <code class="docutils literal notranslate"><span class="pre">ops</span></code> is a matrix of <code class="docutils literal notranslate"><span class="pre">n_seq</span></code> x <code class="docutils literal notranslate"><span class="pre">n_var</span> <span class="pre">+</span> <span class="pre">0.5*n_var*(n_var-1)</span></code>.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
@@ -372,7 +372,7 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<p>We will use the function <code class="docutils literal notranslate"><span class="pre">EM.fit</span></code> to run the EM with various value of <code class="docutils literal notranslate"><span class="pre">eps</span></code> from 0 to 1. The outputs are inferred interactions <code class="docutils literal notranslate"><span class="pre">w_eps</span></code> and the mean energy of observed configurations <code class="docutils literal notranslate"><span class="pre">E_eps</span></code>.</p>
+<p>We will use the function <code class="docutils literal notranslate"><span class="pre">EM.fit</span></code> to run the EM with various values of <code class="docutils literal notranslate"><span class="pre">eps</span></code> from 0 to 1. The outputs are inferred interactions <code class="docutils literal notranslate"><span class="pre">w_eps</span></code> and the mean energy of observed configurations <code class="docutils literal notranslate"><span class="pre">E_eps</span></code>.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>

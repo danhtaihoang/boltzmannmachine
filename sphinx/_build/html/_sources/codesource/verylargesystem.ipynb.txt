@@ -11,7 +11,7 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "We now consider a very larger system (e.g., 100 variables). PLE is intractable, only EM and HF can work for such large systems. We will see that EM works better then HF in everycase that we consider."
+    "We now consider a very large system (e.g., 100 variables). PLE is intractable, thus only EM and HF can work for such large systems. We will see that EM works better than HF in every case that we consider."
    ]
   },
   {
@@ -579,7 +579,7 @@
    "name": "python",
    "nbconvert_exporter": "python",
    "pygments_lexer": "ipython3",
-   "version": "3.7.3"
+   "version": "3.7.0"
   }
  },
  "nbformat": 4,
