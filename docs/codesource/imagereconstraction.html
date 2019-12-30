@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     
-    <title>Application &mdash; e-machine 0.0.1 documentation</title>
+    <title>Image Reconstruction &mdash; e-machine 0.0.1 documentation</title>
     
     <link rel="stylesheet" type="text/css" href="../_static/css/spc-bootstrap.css">
     <link rel="stylesheet" type="text/css" href="../_static/css/spc-extend.css">
@@ -30,6 +30,7 @@
     <link rel="index" title="Index" href="../genindex.html" >
     <link rel="search" title="Search" href="../search.html" >
     <link rel="top" title="e-machine 0.0.1 documentation" href="../index.html" >
+    <link rel="next" title="Missing Data Imputation" href="imputation.html" >
     <link rel="prev" title="Computing time" href="computingtime.html" > 
   </head>
   <body>
@@ -62,6 +63,10 @@
            accesskey="I">index</a>
       </li>
       <li class="active">
+        <a href="imputation.html" title="Missing Data Imputation"
+           accesskey="N">next</a>
+      </li>
+      <li class="active">
         <a href="computingtime.html" title="Computing time"
            accesskey="P">previous</a>
       </li>
@@ -78,6 +83,9 @@
   <h4>Previous topic</h4>
   <p class="topless"><a href="computingtime.html"
                         title="previous chapter">Computing time</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="imputation.html"
+                        title="next chapter">Missing Data Imputation</a></p>
 <div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
     <div class="searchformwrapper">
@@ -297,8 +305,8 @@ div.rendered_html tbody tr:hover {
   background: rgba(66, 165, 245, 0.2);
 }
 </style>
-<div class="section" id="Application">
-<h1>Application<a class="headerlink" href="#Application" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="Image-Reconstruction">
+<h1>Image Reconstruction<a class="headerlink" href="#Image-Reconstruction" title="Permalink to this headline">¶</a></h1>
 <p>We demonstrate an application of our method in recovering an original image from a noisy image. We use MNIST images of handwritten digits to illustrate this idea.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
@@ -396,7 +404,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/codesource_application_8_0.png" src="../_images/codesource_application_8_0.png" />
+<img alt="../_images/codesource_imagereconstraction_8_0.png" src="../_images/codesource_imagereconstraction_8_0.png" />
 </div>
 </div>
 <p>We aim to reconstruct the missing pixels, and recover the original image. We use images of the same digit from the MNIST training set. Because of the limitation of sample size (n_seq = 5851), compared with number of variables (n_var = 28 x 28 = 784 pixels), we first identify “conserved” pixels that have common values for more than 80% of the training samples.</p>
@@ -490,7 +498,7 @@ div.rendered_html tbody tr:hover {
 n_hidden_active: 26
 </pre></div></div>
 </div>
-<p>Now, there are <code class="docutils literal notranslate"><span class="pre">n_hidden_active</span></code> (i.e., 26 in this example) hidden pixels that we need to find the values of. We will apply our <span class="math notranslate nohighlight">\(\epsilon\)</span>-machine to find the pixel bias and interactions between 222 active pixels.</p>
+<p>Now, there are <code class="docutils literal notranslate"><span class="pre">n_hidden_active</span></code> (i.e., 26 in this example) hidden pixels that we need to find the values of. We will apply our Erasure Machine to find the pixel bias and interactions between 222 active pixels.</p>
 <p>We find pixel bias and interactions of active pixels (from training data).</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
@@ -614,7 +622,7 @@ optimal eps: 0.935
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/codesource_application_24_0.png" src="../_images/codesource_application_24_0.png" />
+<img alt="../_images/codesource_imagereconstraction_24_0.png" src="../_images/codesource_imagereconstraction_24_0.png" />
 </div>
 </div>
 <p>The recovered image looks like the original image.</p>
